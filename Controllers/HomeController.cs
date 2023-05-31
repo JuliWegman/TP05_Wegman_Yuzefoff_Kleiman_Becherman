@@ -8,4 +8,14 @@ public class HomeController : Controller
     {
         return View();
     }
+    public IActionResult Tutorial()
+    {
+        return View();
+    }
+    public IActionResult Bus()
+    {
+        Escape.InicializarJuego();
+        ViewBag.Respuesta=Escape.incognitasSalas[Escape.estadoJuego];
+        return View();
+    }
 }
