@@ -10,8 +10,9 @@ html {
   }
 }
 
-body {
+body.Inicial {
   margin: 20px 60px 0px 20px;
+  background-image:url("~/imagenes/images.jfif");
 }
 
 footer {
