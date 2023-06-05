@@ -10,9 +10,21 @@ html {
   }
 }
 
-body.Inicial {
-  margin: 20px 60px 0px 20px;
-  background-image:url("~/imagenes/images.jfif");
+video{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: -1;
+  width: 100%;
+}
+.Inicial img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: -1;
+  width: 100%;
 }
 
 footer {

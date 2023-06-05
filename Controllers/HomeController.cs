@@ -18,4 +18,8 @@ public class HomeController : Controller
         ViewBag.Respuesta=Escape.incognitasSalas[Escape.estadoJuego];
         return View();
     }
+    public IActionResult VerificarRespuesta(string respuesta){
+        if(respuesta==Escape.incognitasSalas[Escape.estadoJuego])Escape.estadoJuego++;
+        return RedirectToAction("Bus");
+    }
 }
