@@ -13,18 +13,20 @@ html {
 video{
   position: absolute;
   left: 0;
-  top: 0;
   height: 100%;
+  top: 0;
   z-index: -1;
   width: 100%;
 }
-.Inicial img {
+.fondo{
   position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
+  margin-left: 25%;
+  float: center;
   z-index: -1;
-  width: 100%;
+}
+img .resto{
+  position: absolute;
+  z-index: -2;
 }
 
 footer {
