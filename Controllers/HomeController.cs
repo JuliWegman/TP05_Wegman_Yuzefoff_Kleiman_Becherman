@@ -22,4 +22,7 @@ public class HomeController : Controller
         if(respuesta==Escape.incognitasSalas[Escape.estadoJuego])Escape.estadoJuego++;
         return RedirectToAction("Bus");
     }
+    public IActionResult Bomba(){
+        return View();
+    }
 }

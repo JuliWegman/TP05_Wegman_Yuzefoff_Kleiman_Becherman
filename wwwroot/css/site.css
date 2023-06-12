@@ -18,17 +18,18 @@ video{
   z-index: -1;
   width: 100%;
 }
+.bomba{
+  position: absolute;
+  margin-left: 50%;
+  float:left;
+  z-index: 0;
+}
 .fondo{
   position: absolute;
   margin-left: 25%;
   float: center;
   z-index: -1;
 }
-img .resto{
-  position: absolute;
-  z-index: -2;
-}
-
 footer {
   position: fixed; 
   bottom: 0; 
