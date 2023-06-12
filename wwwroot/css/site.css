@@ -19,8 +19,9 @@ video{
   width: 100%;
 }
 .bomba{
+  margin-top: 35%;
   position: absolute;
-  margin-left: 50%;
+  margin-left: 40%;
   float:left;
   z-index: 0;
 }
