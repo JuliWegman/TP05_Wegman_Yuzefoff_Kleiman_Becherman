@@ -5,10 +5,19 @@
 @if(Escape.estadoJuego==3){
 <video src="~/imagenes/Video.mp4" autoplay="true" muted="true" loop="true" width="50%" ></video>
 }else{
-  <img class="fondo" src="~/imagenes/definifitvo.jpg" width="50%"></img>
+  <img class="fondo" src="~/imagenes/definifitvo.jpg" width="50%">
 }
 <a href='@Url.Action("Bomba",new {IMG=1})'>
 <img src="~/imagenes/bomba.png" width="22%" height="auto" class=bomba></img>
+</a>
+<a href='@Url.Action("Bomba",new {IMG=2})'>
+<img src="~/imagenes/morse.jpg" width="4.5%" height="7%" class="morse"></img>
+</a>
+<a href='@Url.Action("Bomba",new {IMG=3})'>
+<img src="~/imagenes/lista.png" width="15%" height="7%" class="lista"></img>
+</a>
+<a href='@Url.Action("Bomba",new {IMG=4})'>
+<img src="~/imagenes/fibonacci.jpg" width="5%" height="7%" class="fibonacci"></img>
 </a>
 
 </div>

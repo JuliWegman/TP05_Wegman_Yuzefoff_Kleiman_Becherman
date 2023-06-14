@@ -18,6 +18,14 @@ video{
   z-index: -1;
   width: 100%;
 }
+.preguntas{
+  margin-top: 22%;
+  position: absolute;
+  margin-left: 29%;
+  float:left;
+  z-index: 0;
+  height: 10%;
+}
 .bomba{
   margin-top: 35%;
   position: absolute;
@@ -25,11 +33,32 @@ video{
   float:left;
   z-index: 0;
 }
+.morse{
+  margin-top: 21.5%;
+  position: absolute;
+  margin-left: 48%;
+  float:left;
+  z-index: 1;
+}
+.lista{
+  margin-top: 6%;
+  position: absolute;
+  margin-left: 47.5%;
+  float:left;
+  z-index: 1;
+}
 .fondo{
+  margin-bottom: 5%;
   position: absolute;
   margin-left: 25%;
-  float: center;
   z-index: -1;
+}
+.fibonacci{
+  margin-top: 45%;
+  position: absolute;
+  margin-left: 70%;
+  float:left;
+  z-index: 1;
 }
 footer {
   position: fixed; 

@@ -19,7 +19,7 @@ public class HomeController : Controller
         return View();
     }
     public IActionResult VerificarRespuesta(string respuesta){
-        if(respuesta==Escape.incognitasSalas[Escape.estadoJuego])Escape.estadoJuego++;
+        if(respuesta.ToUpper()==Escape.incognitasSalas[Escape.estadoJuego])Escape.estadoJuego++;
         return RedirectToAction("Bus");
     }
     public IActionResult Bomba(int IMG){

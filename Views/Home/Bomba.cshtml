@@ -1,7 +1,10 @@
-<div>
 <header style="position:fixed; top: 0; margin: 10px 0px 20px 0px;">
+    <a href='@Url.Action("Bus")'>
     <img src="~/imagenes/flecha.png" width="20%" height="auto">
+    </a>
 </header>
+<div>
+    <img class="fondo" src="~/imagenes/definifitvo.jpg" width="50%">
 @{
     switch(ViewBag.imagen){
         case 1:
@@ -10,18 +13,33 @@
 
             break;
             case 0:
-            <img class="fondo" src="~/imagenes/FondoBomba.0" width="50%" ></img>
+            <img class="fondo" src="~/imagenes/bomba dentro.jpg" width="50%" >
+            <form action='@Url.Action("VerificarRespuesta")' >
+                <input class="preguntas" type="text" name="respuesta" placeholder="7 dígitos">
+            </form>
             break;
             case 1:
-            <img class="fondo" src="~/imagenes/FondoBomba.1" width="50%" ></img>
+            <img class="fondo" src="~/imagenes/bomba ET.png" width="50%" >
             break;
             case 2:
-            <img class="fondo" src="~/imagenes/FondoBomba.2" width="50%" ></img>
+            <img class="fondo" src="~/imagenes/bomba dentro.jpg" width="50%" >
+            <form action='@Url.Action("VerificarRespuesta")' >
+                <input class="preguntas" type="text" name="respuesta">
+            </form>
             break;
             case 4:
-            <img class="fondo" src="~/imagenes/FondoBomba.4" width="50%" ></img>
+            <img class="fondo" src="~/imagenes/bomba dentro.jpg" width="50%" >
             break;
         }
+        break;
+        case 2:
+        <img class="fondo" src="~/imagenes/morse.jpg" width="50%">
+        break;
+        case 3:
+        <img class="fondo" src="~/imagenes/lista.png" width="50%">
+        break;
+        case 4:
+        <img class="fondo" src="~/imagenes/fibonacci.jpg" width="50%">
         break;
     }
 }
