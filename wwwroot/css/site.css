@@ -2,6 +2,7 @@ html {
   font-size: 14px;
   position: relative;
   min-height: 100%;
+  background-color: rgb(95, 94, 94);
 }
 
 @media (min-width: 768px) {
@@ -19,7 +20,7 @@ video{
   width: 100%;
 }
 .preguntas{
-  margin-top: 22%;
+  margin-top: 32%;
   position: absolute;
   margin-left: 29%;
   float:left;
@@ -53,10 +54,16 @@ video{
   margin-left: 25%;
   z-index: -1;
 }
+.mesa{
+  margin-bottom: 5%;
+  position: absolute;
+  margin-left: 10%;
+  z-index: -1;
+}
 .fibonacci{
   margin-top: 45%;
   position: absolute;
-  margin-left: 70%;
+  margin-left: 69%;
   float:left;
   z-index: 1;
 }

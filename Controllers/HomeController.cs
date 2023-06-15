@@ -6,6 +6,7 @@ public class HomeController : Controller
 {
     public IActionResult Index()
     {
+        Escape.InicializarJuego();
         return View();
     }
     public IActionResult Tutorial()
@@ -14,12 +15,13 @@ public class HomeController : Controller
     }
     public IActionResult Bus()
     {
-        Escape.InicializarJuego();
         ViewBag.Respuesta=Escape.incognitasSalas[Escape.estadoJuego];
         return View();
     }
     public IActionResult VerificarRespuesta(string respuesta){
-        if(respuesta.ToUpper()==Escape.incognitasSalas[Escape.estadoJuego])Escape.estadoJuego++;
+        if(respuesta.ToLower()==Escape.incognitasSalas[Escape.estadoJuego]){
+            Escape.estadoJuego++;
+        }
         return RedirectToAction("Bus");
     }
     public IActionResult Bomba(int IMG){

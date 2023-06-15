@@ -1,23 +1,41 @@
 <div class="Inicial" >
+
 <header style="position:fixed; top: 0; margin: 10px 0px 20px 0px;">
+<a href='@Url.Action("Index")'>
     <img src="~/imagenes/flecha.png" width="20%" height="auto">
+</a>
 </header>
-@if(Escape.estadoJuego==3){
+
+@if(Escape.estadoJuego==2){
 <video src="~/imagenes/Video.mp4" autoplay="true" muted="true" loop="true" width="50%" ></video>
-}else{
-  <img class="fondo" src="~/imagenes/definifitvo.jpg" width="50%">
-}
 <a href='@Url.Action("Bomba",new {IMG=1})'>
-<img src="~/imagenes/bomba.png" width="22%" height="auto" class=bomba></img>
+<img src="~/imagenes/bomba.png" width="22%" height="auto" class=bomba style="margin-top:37%;">
 </a>
 <a href='@Url.Action("Bomba",new {IMG=2})'>
-<img src="~/imagenes/morse.jpg" width="4.5%" height="7%" class="morse"></img>
+<img src="~/imagenes/morse.jpg" width="4.5%" height="7%" class="morse" style="margin-top:21%;margin-left:47%;">
 </a>
 <a href='@Url.Action("Bomba",new {IMG=3})'>
-<img src="~/imagenes/lista.png" width="15%" height="7%" class="lista"></img>
+<img src="~/imagenes/lista.png" width="15%" height="7%" class="lista" style="margin-top: 5%;">
 </a>
 <a href='@Url.Action("Bomba",new {IMG=4})'>
-<img src="~/imagenes/fibonacci.jpg" width="5%" height="7%" class="fibonacci"></img>
+<img src="~/imagenes/fibonacci.jpg" width="6%" height="9%" class="fibonacci" style="margin-top: 46%;">
 </a>
+}else{
+  <img class="fondo" src="~/imagenes/definifitvo.jpg" width="50%">
+  <a href='@Url.Action("Bomba",new {IMG=1})'>
+<img src="~/imagenes/bomba.png" width="22%" height="auto" class=bomba>
+</a>
+<a href='@Url.Action("Bomba",new {IMG=2})'>
+<img src="~/imagenes/morse.jpg" width="4.5%" height="7%" class="morse">
+</a>
+<a href='@Url.Action("Bomba",new {IMG=3})'>
+<img src="~/imagenes/lista.png" width="15%" height="7%" class="lista">
+</a>
+<a href='@Url.Action("Bomba",new {IMG=4})'>
+<img src="~/imagenes/fibonacci.jpg" width="6%" height="9%" class="fibonacci">
+</a>
+}
+
+
 
 </div>
