@@ -4,6 +4,12 @@ html {
   min-height: 100%;
   background-color: rgb(95, 94, 94);
 }
+body{
+  background-image: url("~/imagenes/colectivo grande.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 @media (min-width: 768px) {
   html {
@@ -11,13 +17,20 @@ html {
   }
 }
 
-video{
+.fondoVideo{
   position: absolute;
   left: 0;
   height: 100%;
   top: 0;
   z-index: -1;
   width: 100%;
+}
+.bombaVideo{
+  margin-top: 35%;
+  position: absolute;
+  margin-left: 40%;
+  float:left;
+  z-index: 0;
 }
 .preguntas{
   margin-top: 32%;
@@ -26,6 +39,17 @@ video{
   float:left;
   z-index: 0;
   height: 10%;
+}
+.pregunta_final{
+  margin-top: 32%;
+  position: absolute;
+  margin-left: 29%;
+  float:left;
+  z-index: 0;
+  height: 10%;
+}
+.pregunta_final::placeholder{
+  color: red;
 }
 .bomba{
   margin-top: 35%;
@@ -52,6 +76,12 @@ video{
   margin-bottom: 5%;
   position: absolute;
   margin-left: 25%;
+  z-index: -1;
+}
+.fondo_bus{
+  margin-bottom: 0%;
+  position: absolute;
+
   z-index: -1;
 }
 .mesa{

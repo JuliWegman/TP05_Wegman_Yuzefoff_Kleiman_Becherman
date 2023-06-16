@@ -10,14 +10,14 @@
         case 1:
         switch(Escape.estadoJuego){
             case 3:
-            <img class="fondo" src="~/imagenes/bomba dentro.jpg" width="50%" style=margin-top:10%; >
+            <video class="bombaVideo" src="~/imagenes/Video Bomba.mp4" autoplay="true" muted="true" loop="true" width="50%" style=margin-top:10%;margin-left:25%;></video>
             <form action='@Url.Action("VerificarRespuesta")' >
-                <input class="preguntas" type="text" name="respuesta" placeholder="......">
+                <input class="preguntas" type="text" name="respuesta">
             </form>
 
             break;
             case 0:
-            <img class="fondo" src="~/imagenes/bomba dentro.jpg" width="50%" style=margin-top:10%; >
+            <img class="fondo" src="~/imagenes/bomba dentro.png" width="50%" style=margin-top:10%; >
             <form action='@Url.Action("VerificarRespuesta")' >
                 <input class="preguntas" type="text" name="respuesta" placeholder="7 dígitos">
             </form>
@@ -29,13 +29,16 @@
             </form>
             break;
             case 2:
-            <img class="fondo" src="~/imagenes/bomba dentro.jpg" width="50%" style=margin-top:10%; >
+            <img class="fondo" src="~/imagenes/bomba dentro.png" width="50%" style=margin-top:10%; >
             <form action='@Url.Action("VerificarRespuesta")' >
-                <input class="preguntas" type="text" name="respuesta" placeholder="......">
+                <input class="preguntas" type="text" name="respuesta">
             </form>
             break;
             case 4:
-            <img class="fondo" src="~/imagenes/bomba dentro.jpg" width="50%" style=margin-top:10%;>
+            <img class="fondo" src="~/imagenes/bomba dentro.png" width="50%" style=margin-top:10%;>
+            <form action='@Url.Action("VerificarRespuesta")' >
+                <input class="pregunta_final" type="text" name="respuesta"placeholder="¿y ahora?">
+            </form>
             break;
         }
         break;
@@ -46,7 +49,7 @@
         <img class="fondo" src="~/imagenes/lista.png" width="50%" style=margin-top:20%;>
         break;
         case 4:
-        <img class="fondo" src="~/imagenes/fibonacci.jpg" width="50%" style=margin-top:50px;>
+        <img class="fondo" src="~/imagenes/fibonacci.jpg" width="35%" style=margin-top:50px;>
         break;
     }
 }
