@@ -28,4 +28,8 @@ public class HomeController : Controller
         ViewBag.imagen=IMG;
         return View();
     }
+
+    public IActionResult pista(){
+        return View();
+    }
 }

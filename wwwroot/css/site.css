@@ -81,7 +81,7 @@ body{
 .fondo_bus{
   margin-bottom: 0%;
   position: absolute;
-
+  margin-left: 5%;
   z-index: -1;
 }
 .mesa{
@@ -117,4 +117,15 @@ a{
   text-decoration: none;
   color: black;
   float :middle;
+}
+h2{
+  padding: 8%;
+  size: 10rem;
+  text-align: center;
+  color: black;
+  background-color: grey;
+}
+h1{
+  text-align: center;
+  color: red;
 }

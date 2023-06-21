@@ -4,10 +4,12 @@
 <a href='@Url.Action("Index")'>
     <img src="~/imagenes/flecha.png" width="20%" height="auto">
 </a>
+
+
 </header>
 
 @if(Escape.estadoJuego==2){
-  <video class="fondoVideo" src="~/imagenes/Video.mp4" autoplay="true" muted="true" loop="true" width="50%" ></video>
+  <video class="fondoVideo" src="~/imagenes/Morse-expandido-lento.mp4" autoplay="true" muted="true" loop="true" width="50%" ></video>
   <a href='@Url.Action("Bomba",new {IMG=1})'>
   <img src="~/imagenes/bomba.png" width="22%" height="auto" class=bomba style="margin-top:37%;">
   </a>
@@ -22,10 +24,10 @@
   </a>
 }else if(Escape.estadoJuego==5){
 
-
+<h1>Felicidades!</h1>
 
 }else{
-  <img class="fondo_bus" src="~/imagenes/colectivo grande.jpg" width="90%" height="auto">
+  <img class="fondo_bus" src="~/imagenes/colectivo grande definitivo.jpg" width="90%" height="auto">
   <a href='@Url.Action("Bomba",new {IMG=1})'>
   <img src="~/imagenes/bomba.png" width="22%" height="auto" class=bomba>
   </a>
@@ -37,6 +39,9 @@
   </a>
   <a href='@Url.Action("Bomba",new {IMG=4})'>
   <img src="~/imagenes/fibonacci.jpg" width="6%" height="9%" class="fibonacci">
+  </a>
+  <a href='@Url.Action("pista")'>
+    <img src="~/imagenes/pista.png" >
   </a>
 }
 
