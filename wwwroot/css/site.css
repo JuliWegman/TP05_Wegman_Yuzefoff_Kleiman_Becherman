@@ -16,6 +16,21 @@ body{
     font-size: 16px;
   }
 }
+.Index{
+  background-color: black;
+}
+.Index div{
+  text-align: center;
+}
+.menu{
+  margin-top: 20px;
+  text-align: center;
+}
+.menu img{
+  float: left;
+  padding-left: 7%;
+  padding-right: 7%;
+}
 
 .fondoVideo{
   position: absolute;
@@ -51,6 +66,10 @@ body{
 .pregunta_final::placeholder{
   color: red;
 }
+.crucifijo{
+  margin-top:12% ;
+  margin-left: 10%;
+}
 .bomba{
   margin-top: 35%;
   position: absolute;
@@ -59,9 +78,9 @@ body{
   z-index: 0;
 }
 .morse{
-  margin-top: 21.5%;
+  margin-top: 21.8%;
   position: absolute;
-  margin-left: 48%;
+  margin-left: 46.3%;
   float:left;
   z-index: 1;
 }
@@ -81,7 +100,7 @@ body{
 .fondo_bus{
   margin-bottom: 0%;
   position: absolute;
-  margin-left: 5%;
+  margin-left: 3.5%;
   z-index: -1;
 }
 .mesa{
@@ -128,4 +147,21 @@ h2{
 h1{
   text-align: center;
   color: red;
+  margin-left: 0;
+}
+button{
+  color:white;
+  background-color: red;
+  border-radius: 20%;
+  padding: 2%;
+  margin-left: 12%;
+  margin-top: 2%;
+  cursor: pointer;
+}
+.boton23{
+  margin-left: 22%;
+}
+
+button .Bus {
+ 
 }

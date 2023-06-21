@@ -1,6 +1,6 @@
 <div class="Inicial" >
 
-<header style="position:fixed; top: 0; margin: 10px 0px 20px 0px;">
+<header style="position:fixed; top: 0; margin: 30px 30px 20px 0px; margin-right:85%;">
 <a href='@Url.Action("Index")'>
     <img src="~/imagenes/flecha.png" width="20%" height="auto">
 </a>
@@ -22,9 +22,14 @@
   <a href='@Url.Action("Bomba",new {IMG=4})'>
   <img src="~/imagenes/fibonacci.jpg" width="6%" height="9%" class="fibonacci" style="margin-top: 46%;">
   </a>
+  <a href='@Url.Action("pista")'>
+    <img src="~/imagenes/pista.png" class="crucifijo">
+  </a>
 }else if(Escape.estadoJuego==5){
 
 <h1>Felicidades!</h1>
+<a href='@Url.Action("Index")' style="margin-left:31%;"><button> Regresar a la página principal</button></a>
+
 
 }else{
   <img class="fondo_bus" src="~/imagenes/colectivo grande definitivo.jpg" width="90%" height="auto">
@@ -41,7 +46,7 @@
   <img src="~/imagenes/fibonacci.jpg" width="6%" height="9%" class="fibonacci">
   </a>
   <a href='@Url.Action("pista")'>
-    <img src="~/imagenes/pista.png" >
+    <img src="~/imagenes/pista.png" class="crucifijo">
   </a>
 }
 

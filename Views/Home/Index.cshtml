@@ -2,19 +2,25 @@
     ViewData["Title"] = "Index";
 }
 <body>
-    <header>
-        <nav class="navegador1">
-            <ul>
-                
-                <li><a href='@Url.Action("Bus")'>Comenzar Juego</a></li>
-                <li><a href="#">Tutorial</a></li>            
-                <li><a href="#">Créditos</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div height="400px">
-    <img src="~/imagenes/bomba.jfif" width="30%"height="400px">
-    <img src="~/imagenes/bus.jfif" width="30%"height="400px">
-    <img src="~/imagenes/yani.jfif" width="30%"height="400px">
+    <div>
+        <img src="~/imagenes/LOGO ESCAPE.png" alt="ESCAPE" width="350" height="150" style="margin-left:43%;">
     </div>
+    <div class="linea">        
+        <img src="~/imagenes/blanco.png" alt="blanco" width="1825em" height="2">
+    </div>
+    <div class="menu">
+    <div class="yani">
+        <img src="~/imagenes/yani.jpg" alt="creadora" width="350" height="450"> 
+    </div>
+    <div class="foto">
+        <img src="~/imagenes/foto portada.jpg" alt="juego" width="350" height="450">  
+    </div>
+    <div class = "reglas">
+        <img src="~/imagenes/reglas.jpg" alt="reglas">
+    </div>
+    </div>
+     <a href='@Url.Action("Bus")'><button> Comenzar Partida</button></a>
+     <a href='@Url.Action("Bus")'><button class="boton23"> Tutorial (aun no esta)</button></a>
+     <a href='@Url.Action("Bus")'><button class="boton23"> créditos(aún no está) </button></a>
+
 </body>
